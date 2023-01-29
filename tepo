@@ -1,0 +1,30 @@
+html,1
+ head,1
+  title,1
+   meta,1
+    link,x
+     script*,x
+      style*,x
+       body,1
+        main,1
+         h1,1
+          h2,1
+           h3,1
+            p,1
+             section,1
+              header,1
+               footer 1, aside,1
+                nav, div,
+                 span, br 1,
+                  b, i, strong, em, 
+                  code, pre, hr, a, 
+                  img, picture, iframe,
+                   audio, video, source,
+                    canvas*, svg* ul 1, ol, optgroup, 
+                    li, form, label, fieldset,
+                     legend, input, textarea,
+                      datalist, select, option,
+                       details, summary, button,
+                        template,
+          table 1, tr 1, td 1, th 1, caption, col,
+           colgroup, figure, figcaption, 
