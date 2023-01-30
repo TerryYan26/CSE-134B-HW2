@@ -16,7 +16,7 @@ html,1
                footer 1, aside,1
                 nav 1, div1,
                  span1, br 1,
-                  b1, i1, strong1, em1, 
+                  b 1, i1, strong1, em1, 
                   code1, pre1, hr1, a1, 
                   img1, picture1, iframe1,
                    audio1, video1, source1,

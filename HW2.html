@@ -180,6 +180,14 @@ body {
       <form>
         <fieldset>
           <legend>Information:</legend>
+          <label>Name: &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="email"><br>
+          <label for="Gender">Gender:&nbsp;&nbsp;</label>
+          <input list="browsers" name="Gender" id="Gender">
+          <datalist id="browsers">
+            <option value="Male">
+            <option value="Female">
+            <option value="Unknown">
+          </datalist><br>
         <label> Email: &nbsp; &nbsp;&nbsp;<input type="text" name="email"></label><br>
         <label> Mobile:&nbsp;&nbsp; <input type="text" name="mobile"> </label><br>
         <label>Message: <textarea name="message" rows="5" cols="30"></textarea></label><br>
