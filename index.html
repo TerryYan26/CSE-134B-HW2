@@ -10,147 +10,25 @@
   <meta name="author" content="Ka Wing Yan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
-  <link rel="stylesheet" href="styles.css">
   
-<style>
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-.header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      margin: 0cm;
-      background-color: #000000;
-      
-    }
-    .header h1 {
-      color: white;
-      font-size: 30px;
-      font-family: "Pacifico", cursive;
-    }
-
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-flex-direction: row;
-}
-li{
-  float: left;
-}
-li a{
-  display: block;
-  color: whitesmoke;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: gray;
-}
-li a.active {
-      background-color: gray;
-      color: white;
-    }
-
-    .blinkt {
-    animation: blink 0.1s linear infinite;
-}
-
-.myself {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-.myself h1, span {
-    font-family: 'Bebas Neue', apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 6vw;
-    text-align: center;}
-
-    .myself > p {
-    font-size: 2vw;
-    font-style: italic;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    text-align: center;
-}
-@media screen and (max-width: 1500px){
-.content-card-container {
-    display: grid;
-    gap: 1em;
-    margin: 1em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
-}
-.About {
-  letter-spacing: .08em;
-  color: #335eea!important;
-  text-transform: uppercase!important;
-  display: block;
-    font-size: 0.67em;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    text-align: center;
-}
-h3{
-  
-text-align: center;
-}
-.content-card-container {
-    display: grid;
-    gap: 1em;
-    margin: 1em;
-    
-}
-
-.content-card {
-    padding: 1.5em;
-    gap: 1em;
-    border-radius: 1em;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 25%) 2px 2px 3px;
-    align-items: start;
-}
-.responsive {
-  width: auto;
-  height: auto;
-  
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 <body>
     <div class="container">
         <header class="header">
-        <h1>MY First HTML page</h1>    
+        <h1>MY First HTML page</h1>  
+        <a name="home"></a>  
         </header>
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="Career.html" >Career</a></li>
-          <li><a href="Map.html">Map</a></li>
-          <li><a href="About.html">About</a></li>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#About" >About</a></li>
+          <li><a href="#Carrer">Carrer</a></li>
+          <li><a href="#Map">Map</a></li>
         </ul>
       </div>
        <main>
         <section class="myself"><h1>
           Hello! I'm 
-          <span class="blinkt">Terry Yan</span>
+          <span class="blink">Terry Yan</span>
         </h1>
       <br><br><br>
       <p>Computer engineering student at UC San Diego</p>
@@ -158,88 +36,71 @@ text-align: center;
       </section>
 
       
+      <div id="card-holder-group">
         <section>
           <header>
+            <a name="About"></a>
             <h2 class="About">
             About Me
             
             </h2>
           </header>
             <h3>Out of your comfort zone!</h3>
+            
             <div class=" content-card-container">
             <article class="content-card">
-              <h3>University of California, San Diego</h3>
-              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
-              <p>2021 - Present</p>
+              <h3>Cheung Sha Wan Catholic Secondary School</h3>
+              <img src="picture/My project (5).jpg" alt="elac campus" >
+
+              <p>2011 - 2017</p>
 
             </article>
             <article class="content-card">
               <h3>East Los Angeles College</h3>
-              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
+              <img src="picture/My project (6).jpg" alt="elac campus">
               <p>2018 - 2021</p>
 
             </article>
             <article class="content-card">
-              <h3>Cheung Sha Wan Catholic Secondary School</h3>
-              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
-              <p>2011 - 2017</p>
-
+              <h3>University of California, San Diegol</h3>
+              <img src="picture/My project (7).jpg" alt="UCSD libary">
+              
+              <p>2021 - Present</p>
             </article>
-
+            <br>
+            <section>
+              
+              <header>
+                <h2 class="About">
+                Career
+                <a name="Carrer"></a>
+                </h2>
+              </header>
           
-          <div>
-            
-          </div>
+            <article class="content-card">
+            <img src="picture/Carrer.jpg" class="imageAboutPage" alt="">
+            <p class="text"> Student Assistant with good experience supporting multiple department and college staff and professor in different of office and administrative tasks. Excellent organizational skills and Working with different ethnicity; providing translation service with student that English not a native language. Relates well to students, faculty, staff and college members.
+            </p>
+            </article>
+        </div>
+      
+      
         </section>
-      </div>
-
+        
+        <hr>
        </main>
     
             
          
-            <h2>About Me</h2> 
+           
 
-              <section>
-              <details>
-                <summary>Career</summary>
-                <h3>Wait to add!</h3>
-              </details>
-              
-              </section>
+            
           
-      <hr><br>
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-       
-      </svg>
-      <table>
-  
-        <caption>Famous Skills⚡</caption>
-        <colgroup>
-          <col span="2" style="background-color:black">
-          <col style="background-color:black">
-        </colgroup>
-        <tr>
-          <th>SKILL 1</th>
-          <th>Skill 2</th>
-          <th>Skill 3</th>
-        </tr> 
-        <tr>
-          <td><span style="color:yellowgreen;font-weight:bold">Cooking</span></td>
-          <td><span style="color:rgb(251, 202, 60);font-weight:bold">Coding</span></td>
-          <td><span style="color:rgb(60, 251, 85);font-weight:bold">Hiking</span></td>
-        </tr>
-       
       
-      </table>
-      <nav>
-        <center>
-          |
-        <a href="/#cooking/">Cooking</a> |
-        <a href="/coding/">Coding</a> |
-        <a href="/Hiking/">Hiking</a> |
-      </center>
-      </nav>
+      
+      
+      
+    
       <form>
         <fieldset>
           <legend>Information:</legend>
