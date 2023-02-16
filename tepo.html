@@ -1,207 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>First HTML Website</title>
-  <meta charset="UTF-8">
-  <meta name="per" content="Free Web tutorials">
-  <meta name="description" content="Personal websites">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="Ka Wing Yan">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="styles.css">
-<style>
-body {
-      margin: 0;
-      box-sizing: border-box;
-    }
-    .container {
-      line-height: 150%;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      background-color: #e9e9e9;
-      
-    }
-    .header h1 {
-      color: #222222;
-      font-size: 30px;
-      font-family: "Pacifico", cursive;
-    }
-    .header .social a {
-      padding: 0 5px;
-      color: #222222;
-    }
-    .left {
-      float: left;
-      width: 180px;
-      margin: 0;
-      padding: 1em;
-    }
-    
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    li a {
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-    li a.active {
-      background-color: #84e4e2;
-      color: white;
-    }
-    li a:hover:not(.active) {
-      background-color: #29292a;
-      color: white;
-    }
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      margin: 30px 0;
-    }
-    td,
-    th {
-      border: 1px solid #dddddd;
-      padding: 8px;
-    }
-    tr:nth-child(1) {
-      background-color: #84e4e2;
-      color: white;
-    }
-    tr td i.fas {
-      display: block;
-      font-size: 35px;
-      text-align: center;
-    }
-
-    .footer {
-      padding: 55px 20px;
-      background-color: #2e3550;
-      color: white;
-      text-align: center;
-    }
-
-</style>
-<body>
-    <div class="container">
-
-    
-          
-            
-    
-
-          
-    
-    
-  
-        <header class="header">
-            <h1>My First HTML Website</h1>
-            
-            <audio controls>
-              <source src="/source/sample.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          
-        </header>
-      </div>
-        <aside class="left">
-          <img src="indexpage.jpg" alt="indexpicture" width="180" height="170">
-            <ul>
-              <li><a class="active" href="index.html">Home</a></li>
-              <li><a href="Career.html" >Career</a></li>
-              <li><a href="Map.html">Map</a></li>
-              <li><a href="About.html">About</a></li>
-            </ul>
-            <canvas id="myCanvas" width="180" height="80" style="border:1px solid #000000;">
-              <script>
-                var c=document.getElementById("myCanvas");
-                var ctx=c.getContext("2d");
-                ctx.font="30px Arial";
-                ctx.strokeText("Hello World",10,50);
-                
-                </script>
-            </canvas>
-          </aside>  
-          <main class="content">
-            <h2>About Me</h2> 
-              <section>
-               <h3> I am a fact person</h3> 
-              </section>
-              <section>
-              <details>
-                <summary>Career</summary>
-                <h3>Wait to add!</h3>
-              </details>
-              
-              </section>
-          
-      <hr><br>
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-       
-      </svg>
-      <table>
-  
-        <caption>Famous Skills⚡</caption>
-        <colgroup>
-          <col span="2" style="background-color:black">
-          <col style="background-color:black">
-        </colgroup>
-        <tr>
-          <th>SKILL 1</th>
-          <th>Skill 2</th>
-          <th>Skill 3</th>
-        </tr> 
-        <tr>
-          <td><span style="color:yellowgreen;font-weight:bold">Cooking</span></td>
-          <td><span style="color:rgb(251, 202, 60);font-weight:bold">Coding</span></td>
-          <td><span style="color:rgb(60, 251, 85);font-weight:bold">Hiking</span></td>
-        </tr>
-       
-      
-      </table>
+<div class="container">
+    <header>
+      <h1>My Website</h1>
       <nav>
-        <center>
-          |
-        <a href="/#cooking/">Cooking</a> |
-        <a href="/coding/">Coding</a> |
-        <a href="/Hiking/">Hiking</a> |
-      </center>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
-      <form>
-        <fieldset>
-          <legend>Information:</legend>
-          <label>Name: &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="email"><br>
-          <label for="Gender">Gender:&nbsp;&nbsp;</label>
-          <input list="browsers" name="Gender" id="Gender">
-          <datalist id="browsers">
-            <option value="Male">
-            <option value="Female">
-            <option value="Unknown">
-          </datalist><br>
-        <label> Email: &nbsp; &nbsp;&nbsp;<input type="text" name="email"></label><br>
-        <label> Mobile:&nbsp;&nbsp; <input type="text" name="mobile"> </label><br>
-        <label>Message: <textarea name="message" rows="5" cols="30"></textarea></label><br>
-        <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday"><br>
-        <input type="submit" value="Submit"><br>
-        
-        </fieldset>
-      </form>
-        
+    </header>
+    
+    <style>
+        .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  background-color: #ccc;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+section {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 1rem;
+  justify-self: center;
+}
+
+    </style>
+    <main>
+      <section>
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper bibendum sapien, et sollicitudin neque finibus eget.</p>
+      </section>
       
-  <footer>
-    <p>Author: Ka Wing Yan
-      <br>
-      w2yan@ucsd.edu</p>
-  </footer>
-</main>
+      <section>
+        <h2>Section 2</h2>
+        <p>Phasellus eleifend, felis quis pharetra vehicula, lorem mauris auctor nibh, eget sagittis nisl enim id libero.</p>
+      </section>
+      
+      <section>
+        <h2>Section 3</h2>
+        <p>Suspendisse venenatis luctus quam, id consectetur nisl mollis ut. Duis varius quam sed nibh consequat, in convallis elit molestie.</p>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+  </div>
+  

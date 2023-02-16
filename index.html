@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
+  
 <style>
   
   *{
@@ -83,12 +84,14 @@ li a.active {
     padding-right: 10vw;
     text-align: center;
 }
+@media screen and (max-width: 1500px){
 .content-card-container {
     display: grid;
     gap: 1em;
     margin: 1em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
 }
 .About {
   letter-spacing: .08em;
@@ -107,7 +110,14 @@ h3{
   
 text-align: center;
 }
-.aboutme {
+.content-card-container {
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+    
+}
+
+.content-card {
     padding: 1.5em;
     gap: 1em;
     border-radius: 1em;
@@ -116,7 +126,14 @@ text-align: center;
     grid-template-columns: 1fr;
     background-color: white;
     box-shadow: rgb(0 0 0 / 25%) 2px 2px 3px;
+    align-items: start;
 }
+.responsive {
+  width: auto;
+  height: auto;
+  
+}
+
 </style>
 <body>
     <div class="container">
@@ -140,24 +157,36 @@ text-align: center;
         
       </section>
 
-      <div id="ab"><!--card-->
+      
         <section>
           <header>
             <h2 class="About">
             About Me
+            
             </h2>
+          </header>
             <h3>Out of your comfort zone!</h3>
-            <article class="aboutme">
+            <div class=" content-card-container">
+            <article class="content-card">
               <h3>University of California, San Diego</h3>
-              <picture>
-                <source srcset="/picture/ucsd.jpg" media="(min-width: 3000px)">
-                <source srcset="/picture/ucsd.jpg" media="(min-width: 1500px)">
-                <img style="border-radius: 0.5em;" src="/picture/ucsd.jpg" alt="UCSD Library">
-              </picture>
+              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
               <p>2021 - Present</p>
 
             </article>
-          </header>
+            <article class="content-card">
+              <h3>East Los Angeles College</h3>
+              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
+              <p>2018 - 2021</p>
+
+            </article>
+            <article class="content-card">
+              <h3>Cheung Sha Wan Catholic Secondary School</h3>
+              <img src="/picture/ucsd.jpg" alt="UCSD" class="responsive" width="200" height="200">
+              <p>2011 - 2017</p>
+
+            </article>
+
+          
           <div>
             
           </div>
