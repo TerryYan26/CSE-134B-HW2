@@ -85,6 +85,10 @@ li a.active {
     .blinkt {
     animation: blink 0.1s linear infinite;
 }
+
+h5{
+    font-size: 5vw;
+}
 .info {
    
 
