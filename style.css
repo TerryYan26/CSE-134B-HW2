@@ -86,12 +86,11 @@ li a.active {
     animation: blink 0.1s linear infinite;
 }
 .info {
-    /* background-image: url("/picture/bg1.avif");
-    background-color: var(--pantone-lotus); */
+   
 
-    padding-bottom: 1;
+    padding-bottom: 1em;
     display: grid;
-    gap: 1;
+    gap: 1em;
     margin: 1em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
