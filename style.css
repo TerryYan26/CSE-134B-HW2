@@ -110,10 +110,10 @@ li a.active {
     text-align: center;}
 
     .myself > p {
-    font-size: 4vw;
+    font-size: 5vw;
     font-style: italic;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     text-align: center;
 }
 
